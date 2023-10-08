@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital@1&family=Dancing+Script:wght@700&family=IBM+Plex+Sans:wght@700&family=Inter:wght@600&family=Poppins:ital,wght@0,100;0,900;1,800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+
+body {
+    background: #000;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px;
+    background: linear-gradient(to bottom, #000, transparent);
+}
+
+.main-container {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url(../img/netflix.jpg);
+    background-size: cover;
+}
+
+.contain {
+    text-align: center;
+    padding: 130px 75px 0px 75px;
+    height: calc(100vh - 123px);
+    background: linear-gradient(to bottom, transparent,#000);
+}
+
+
+.hr {
+    height: 8px;
+    background: #222;
+    border: none;
+}
+
+.other {
+    display: flex;
+    place-items: center;
+    margin: 0 75px;
+}
+
+h1 {
+    font-size: 48px;
+    font-family:'Poppins', sans-serif;;
+}
+
+h2 {
+    font-size: 24px;
+    padding: 20px;
+}
+
+h3 {
+    font-size: 20px;
+}
+select{
+    background-color: transparent;
+    padding: 5px 10px;
+    color: #fff;
+    font-size: 1.2em;
+}
+input, button{
+    margin: 20px 4px;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+button{
+    background: red;
+    color: #fff; 
+}
+input{
+    background: transparent;
+    border: 1px solid #444;
+    color: #fff;     
+    width: 30%;  
+    height: 50px;
+    font-size: 1.3rem;
+}
+
+button:hover{
+    background: #9c0505;
+}
+.faq button, .contain button{
+    font-size: 1.3rem;
+}
+.faq {
+    padding: 50px 150px;
+    font-size: 24px;
+    margin: 10px;
+}
+
+.faq h1 {
+    text-align: center;
+    padding: 10px;
+}
+
+.collapsible-header {
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    min-height: 80px;
+    padding: 8px;
+    color: #fff;
+    background: #2D2D2D;
+    border: 1px solid #111;
+    font-weight: 700; 
+    padding-top: 28px;
+    padding-left: 30px; 
+}
+
+.plus {
+    position: absolute;
+    top: 20%;
+    right: 35px;
+    font-size: 46px;
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.cross {
+    display: none;
+    position: absolute;
+    top: 20%;
+    right: 35px;
+    font-size: 46px;
+}
+
+.collapsible.active .plus {
+    display: none;
+}
+
+.collapsible.active .cross {
+    display: inline-block;
+}
+
+.collapsible-content {
+    background: #2D2D2D;
+    font-weight: 700;
+    display: none;
+    padding: 8px;
+    padding-top: 28px;
+    padding-left: 30px;
+}
+
+.collapsible-content p {
+    text-decoration: none;
+    line-height: 30px;
+}
+
+.collapsible-header:hover {
+    background: #444;
+}
+
+.collapsible.active .collapsible-content {
+    display: block;
+}
+
+footer{
+    padding: 100px;
+}
+footer .links{
+    column-count: 4;
+    column-width: 200px;
+    margin: 10px 0px;
+}
+footer li{
+    list-style: none;
+    padding: 8px;
+}
+footer li a{
+    color: #fff;
+}
